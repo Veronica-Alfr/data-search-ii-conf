@@ -1,0 +1,46 @@
+-- CreateTable
+CREATE TABLE "interviewee_form" (
+    "id" SERIAL NOT NULL,
+    "generalInfo" TEXT,
+    "fullName" TEXT NOT NULL,
+    "email" TEXT NOT NULL,
+    "city" TEXT NOT NULL,
+    "age" INTEGER NOT NULL,
+    "race" TEXT NOT NULL,
+    "genderIdentity" TEXT NOT NULL,
+    "primarySecondaryEducation" TEXT NOT NULL,
+    "academicBackground" TEXT NOT NULL,
+    "volunteerWork" BOOLEAN NOT NULL,
+    "environmentalAgenda" BOOLEAN NOT NULL,
+    "environmentalInterest" BOOLEAN NOT NULL,
+    "noInvolvement" BOOLEAN NOT NULL,
+    "questions" TEXT,
+    "knowledgeLevel" INTEGER NOT NULL,
+    "climateConcerns" INTEGER NOT NULL,
+    "agendaClimaticNews" BOOLEAN NOT NULL,
+    "agendaClimaticSchool" BOOLEAN NOT NULL,
+    "agendaClimaticConversations" BOOLEAN NOT NULL,
+    "agendaClimaticCommunities" BOOLEAN NOT NULL,
+    "agendaClimaticWithoutExposure" BOOLEAN NOT NULL,
+    "greenJob" BOOLEAN NOT NULL,
+    "carbonMarket" BOOLEAN NOT NULL,
+    "climateJustice" BOOLEAN NOT NULL,
+    "globalWarming" BOOLEAN NOT NULL,
+    "unafm" BOOLEAN NOT NULL,
+    "sustainableDevelopment" BOOLEAN NOT NULL,
+    "climateAction" BOOLEAN NOT NULL,
+    "waterCrisis" BOOLEAN NOT NULL,
+    "impactAgricultureGasEmissions" BOOLEAN NOT NULL,
+    "importancePreservingAmazonForest" BOOLEAN NOT NULL,
+    "heardAboutOilExploration" TEXT NOT NULL,
+    "consumptionOutweighsEcologicalResources" TEXT NOT NULL,
+    "descriptionFinal" TEXT,
+    "campinasChanges" TEXT NOT NULL,
+    "comments" TEXT NOT NULL,
+    "createdAt" TIMESTAMP(3) NOT NULL DEFAULT CURRENT_TIMESTAMP,
+
+    CONSTRAINT "interviewee_form_pkey" PRIMARY KEY ("id")
+);
+
+-- CreateIndex
+CREATE UNIQUE INDEX "interviewee_form_email_key" ON "interviewee_form"("email");
