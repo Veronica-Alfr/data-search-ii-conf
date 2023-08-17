@@ -133,6 +133,9 @@ export class CreateIntervieweeDto {
   @IsBoolean()
   importancePreservingAmazonForest: boolean;
 
+  @IsBoolean()
+  esg: boolean;
+
   @IsIn([
     'Já estudei sobre',
     'Vi algumas notícias sobre',
@@ -157,4 +160,7 @@ export class CreateIntervieweeDto {
 
   @IsString()
   comments: string; // a textarea tag
+
+  @IsBoolean()
+  dataPermission: boolean;
 }

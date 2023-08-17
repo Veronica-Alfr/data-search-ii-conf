@@ -32,11 +32,13 @@ CREATE TABLE "interviewee_form" (
     "waterCrisis" BOOLEAN NOT NULL,
     "impactAgricultureGasEmissions" BOOLEAN NOT NULL,
     "importancePreservingAmazonForest" BOOLEAN NOT NULL,
+    "esg" BOOLEAN NOT NULL,
     "heardAboutOilExploration" TEXT NOT NULL,
     "consumptionOutweighsEcologicalResources" TEXT NOT NULL,
     "descriptionFinal" TEXT,
     "campinasChanges" TEXT NOT NULL,
     "comments" TEXT NOT NULL,
+    "dataPermission" BOOLEAN NOT NULL,
     "createdAt" TIMESTAMP(3) NOT NULL DEFAULT CURRENT_TIMESTAMP,
 
     CONSTRAINT "interviewee_form_pkey" PRIMARY KEY ("id")

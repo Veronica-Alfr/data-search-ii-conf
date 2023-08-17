@@ -44,14 +44,16 @@ model IntervieweeForm {
   climateAction      Boolean  
   waterCrisis        Boolean
   impactAgricultureGasEmissions Boolean 
-  importancePreservingAmazonForest Boolean 
+  importancePreservingAmazonForest Boolean
+  esg               Boolean
 
   heardAboutOilExploration String
   consumptionOutweighsEcologicalResources String
 
   descriptionFinal   String?
   campinasChanges    String
-  comments            String
+  comments           String
+  dataPermission     Boolean
 
   createdAt DateTime @default(now())
 

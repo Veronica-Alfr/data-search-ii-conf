@@ -33,10 +33,12 @@ export class IntervieweeEntity implements IntervieweeForm {
   waterCrisis: boolean;
   impactAgricultureGasEmissions: boolean;
   importancePreservingAmazonForest: boolean;
+  esg: boolean;
   heardAboutOilExploration: string;
   consumptionOutweighsEcologicalResources: string;
   descriptionFinal: string;
   campinasChanges: string;
   comments: string;
+  dataPermission: boolean;
   createdAt: Date;
 }
