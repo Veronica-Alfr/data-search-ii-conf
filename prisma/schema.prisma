@@ -39,12 +39,13 @@ model IntervieweeForm {
   carbonMarket       Boolean   
   climateJustice     Boolean   
   globalWarming      Boolean   
-  unafm               Boolean   
+  unafm              Boolean   
   sustainableDevelopment Boolean 
   climateAction      Boolean  
   waterCrisis        Boolean
   impactAgricultureGasEmissions Boolean 
-  importancePreservingAmazonForest Boolean 
+  importancePreservingAmazonForest Boolean
+  esg                Boolean
 
   heardAboutOilExploration String
   consumptionOutweighsEcologicalResources String
@@ -52,6 +53,8 @@ model IntervieweeForm {
   descriptionFinal   String?
   campinasChanges    String
   comments            String
+
+  dataPermission     Boolean
 
   createdAt DateTime @default(now())
 
