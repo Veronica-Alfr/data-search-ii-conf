@@ -4,6 +4,7 @@ services:
   app:
     # platform: linux/amd64
     build: .
+    user: root
     entrypoint: .docker/entrypoint.sh
     container_name: prismaapi-app
     ports:

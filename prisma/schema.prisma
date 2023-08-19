@@ -8,52 +8,52 @@ datasource db {
 }
 
 model IntervieweeForm {
-  id                   Int       @id @default(autoincrement())
-  generalInfo          String?
-  fullName             String
-  email                String    @unique
-  city                 String
-  age                  Int
+  id          Int     @id @default(autoincrement())
+  generalInfo String?
+  fullName    String
+  email       String  @unique
+  city        String
+  age         Int
 
-  race                 String
-  genderIdentity       String
+  race                      String
+  genderIdentity            String
   primarySecondaryEducation String
-  academicBackground   String
+  academicBackground        String
 
-  volunteerWork       Boolean   
-  environmentalAgenda Boolean   
-  environmentalInterest Boolean 
-  noInvolvement       Boolean   
+  volunteerWork         Boolean
+  environmentalAgenda   Boolean
+  environmentalInterest Boolean
+  noInvolvement         Boolean
 
-  questions            String?
-  knowledgeLevel      Int
-  climateConcerns     Int
+  questions       String?
+  knowledgeLevel  Int
+  climateConcerns Int
 
-  agendaClimaticNews Boolean   
-  agendaClimaticSchool Boolean 
-  agendaClimaticConversations Boolean 
-  agendaClimaticCommunities Boolean 
+  agendaClimaticNews            Boolean
+  agendaClimaticSchool          Boolean
+  agendaClimaticConversations   Boolean
+  agendaClimaticCommunities     Boolean
   agendaClimaticWithoutExposure Boolean
 
-  greenJob           Boolean   
-  carbonMarket       Boolean   
-  climateJustice     Boolean   
-  globalWarming      Boolean   
-  unafm               Boolean   
-  sustainableDevelopment Boolean 
-  climateAction      Boolean  
-  waterCrisis        Boolean
-  impactAgricultureGasEmissions Boolean 
+  greenJob                         Boolean
+  carbonMarket                     Boolean
+  climateJustice                   Boolean
+  globalWarming                    Boolean
+  unafm                            Boolean
+  sustainableDevelopment           Boolean
+  climateAction                    Boolean
+  waterCrisis                      Boolean
+  impactAgricultureGasEmissions    Boolean
   importancePreservingAmazonForest Boolean
-  esg               Boolean
+  esg                              Boolean
 
-  heardAboutOilExploration String
+  heardAboutOilExploration                String
   consumptionOutweighsEcologicalResources String
 
-  descriptionFinal   String?
-  campinasChanges    String
-  comments           String
-  dataPermission     Boolean
+  descriptionFinal String?
+  campinasChanges  String
+  comments         String
+  dataPermission   Boolean
 
   createdAt DateTime @default(now())
 
